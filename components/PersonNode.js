@@ -5,6 +5,14 @@ import { Handle, Position } from '@xyflow/react';
 const tahun = (s) => (String(s || '').match(/\d{4}/) || [''])[0];
 
 export default function PersonNode({ data }) {
+  if (data.person?.junction) {
+    return (
+      <div className="junction">
+        <Handle id="b" type="source" position={Position.Bottom} className="handle" />
+        <Handle id="t" type="target" position={Position.Top} className="handle" />
+      </div>
+    );
+  }
   const { person: p, selected, dim } = data;
   const lahir = tahun(p.lahir);
   const wafat = tahun(p.wafat);

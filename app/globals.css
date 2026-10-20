@@ -85,3 +85,4 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .drawer { position: absolute; left: 0; right: 0; bottom: 0; width: auto; max-height: 62%; border-left: 0; border-top: 1px solid var(--line); border-radius: 14px 14px 0 0; box-shadow: var(--shadow); }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+   .junction { width: 10px; height: 10px; border-radius: 50%; background: var(--spouse); border: 2px solid var(--bg); }
